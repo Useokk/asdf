@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="html.css" />
+    <title></title>
+  </head>
+  <body>
+    <div class="ralph__box">
+      <h1>랄프다 Ralph</h1>
+      <img src="img/ralphface1.png" class="ralph" />
+    </div>
+    <div class="input__box">
+      <input
+        id="night_day"
+        type="button"
+        value="night"
+        onclick="const jiJi = document.querySelector('body');
+        if(this.value === 'night'){
+        jiJi.style.backgroundColor ='black';
+        jiJi.style.color ='white';
+        this.value = 'day'; 
+        } else { 
+        jiJi.style.backgroundColor ='white';
+        jiJi.style.color ='black';
+        this.value = 'night';}"
+      />
+    </div>
+    <script></script>
+  </body>
+</html>
