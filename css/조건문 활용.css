@@ -38,3 +38,13 @@ body {
 input {
   font-size: 30px;
 }
+
+a {
+  font-size: 30px;
+}
+
+.google,
+.naver,
+.ralph__wiggum {
+  padding-top: 20px;
+}

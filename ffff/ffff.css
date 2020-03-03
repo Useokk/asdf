@@ -1,0 +1,10 @@
+.header {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.header__title-down {
+  display: flex;
+  justify-content: space-between;
+}

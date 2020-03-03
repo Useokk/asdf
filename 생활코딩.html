@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/조건문 활용.css" />
+    <title>생활코딩</title>
+    <script>
+      function linkSetColor(color) {
+        var abc = document.querySelectorAll("a");
+        var i = 0;
+        while (i < abc.length) {
+          abc[i].style.color = color;
+          i = i + 1;
+        }
+      }
+      function bodySetColor(color) {
+        document.querySelector("body").style.color = color;
+      }
+
+      function bodySetBackgroundColor(color) {
+        document.querySelector("body").style.backgroundColor = color;
+      }
+      function nightDay(self) {
+        const jiJi = document.querySelector("body");
+        if (self.value === "night") {
+          bodySetBackgroundColor("black");
+          bodySetColor("white");
+          self.value = "day";
+          linkSetColor("powderblue");
+        } else {
+          bodySetBackgroundColor("white");
+          bodySetColor("black");
+          self.value = "night";
+          linkSetColor("blue");
+        }
+      }
+    </script>
+    <title></title>
+  </head>
+  <body>
+    <div class="ralph__box">
+      <h1>랄프다 Ralph!</h1>
+      <img src="img/ralphface1.png" class="ralph" />
+    </div>
+    <div class="input__box">
+      <input
+        id="night_day"
+        type="button"
+        value="night"
+        onclick="nightDay(this);"
+      />
+    </div>
+    <div class="google">
+      <a href="http://www.google.com">Google</a>
+    </div>
+    <div class="ralph__wiggum">
+      <a href="https://en.wikipedia.org/wiki/Ralph_Wiggum">Ralph wiggum</a>
+    </div>
+    <div class="naver">
+      <a href="http://www.naver.com">Naver</a>
+    </div>
+  </body>
+</html>

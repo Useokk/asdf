@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function onePlusOne() {
+        document.write(1 + 1 + "<br>");
+      }
+      onePlusOne();
+      function sum(left, right) {
+        document.write(left + right + "<br>");
+      }
+      sum(2, 3);
+      function sumRed(left, right) {
+        document.write(
+          '<div style="color:red">' + (left + right) + "</div><br>"
+        );
+      }
+      sumRed(2, 3);
+      function sum2(x, y) {
+        return x + y;
+      }
+      document.write(sum2(2, 3) + "<br>");
+      document.write("<div style='color:blue'>" + sum2(2, 3) + "</div>");
+      document.write("<div style='font-size:29px'>" + sum2(2, 3) + "</div>");
+    </script>
+  </body>
+</html>
