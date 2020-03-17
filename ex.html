@@ -20,5 +20,20 @@
       document.write("That's " + exFile["show time"] + "<br>");
       document.write(exFile.sleepy);
     </script>
+    <h2>Iterate</h2>
+    <script>
+      for (var key in exFile) {
+        document.write(key + " : " + exFile[key] + "<br>");
+      }
+    </script>
+    <h2>property & Method</h2>
+    <script>
+      exFile.showAll = function() {
+        for (var key in this) {
+          document.write(key + " : " + this[key] + "<br>");
+        }
+      };
+      exFile.showAll();
+    </script>
   </body>
 </html>
